@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180310 14:06:23.868" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\user\PycharmProjects\Automation-of-Framework-Structure\FrameWorkAutomation.robot" id="s1" name="FrameWorkAutomation">
+<test id="s1-t1" name="Start Creating Framework Skeleton">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>Please Enter FrameWork Name</arg>
+<arg>default_value='Test'</arg>
+<arg>hidden=False</arg>
+</arguments>
+<assign>
+<var>${FrameWorkName}</var>
+</assign>
+<msg timestamp="20180310 14:06:29.174" level="INFO">${FrameWorkName} = Test2</msg>
+<status status="PASS" endtime="20180310 14:06:29.175" starttime="20180310 14:06:23.969"></status>
+</kw>
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>Please Enter Desire Folder Path where you want to create Framework</arg>
+<arg>default_value='Test'</arg>
+<arg>hidden=False</arg>
+</arguments>
+<assign>
+<var>${DesiredFolderPath}</var>
+</assign>
+<msg timestamp="20180310 14:07:03.352" level="INFO">${DesiredFolderPath} = C:\Users\user\PycharmProjects\Test2</msg>
+<status status="PASS" endtime="20180310 14:07:03.352" starttime="20180310 14:06:29.176"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${DesiredFolderPath}</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.356" html="yes" level="INFO">Created directory '&lt;a href="file://C:\Users\user\PycharmProjects\Test2"&gt;C:\Users\user\PycharmProjects\Test2&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.357" starttime="20180310 14:07:03.353"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${DesiredFolderPath}/CustomLib</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.361" html="yes" level="INFO">Created directory '&lt;a href="file://C:\Users\user\PycharmProjects\Test2\CustomLib"&gt;C:\Users\user\PycharmProjects\Test2\CustomLib&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.361" starttime="20180310 14:07:03.358"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${DesiredFolderPath}/Resources</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.365" html="yes" level="INFO">Created directory '&lt;a href="file://C:\Users\user\PycharmProjects\Test2\Resources"&gt;C:\Users\user\PycharmProjects\Test2\Resources&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.366" starttime="20180310 14:07:03.363"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${DesiredFolderPath}/Results</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.371" html="yes" level="INFO">Created directory '&lt;a href="file://C:\Users\user\PycharmProjects\Test2\Results"&gt;C:\Users\user\PycharmProjects\Test2\Results&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.371" starttime="20180310 14:07:03.368"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${DesiredFolderPath}/Test Data</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.376" html="yes" level="INFO">Created directory '&lt;a href="file://C:\Users\user\PycharmProjects\Test2\Test Data"&gt;C:\Users\user\PycharmProjects\Test2\Test Data&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.377" starttime="20180310 14:07:03.373"></status>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
+<arguments>
+<arg>${DesiredFolderPath}/Tests</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.380" html="yes" level="INFO">Created directory '&lt;a href="file://C:\Users\user\PycharmProjects\Test2\Tests"&gt;C:\Users\user\PycharmProjects\Test2\Tests&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.380" starttime="20180310 14:07:03.378"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${DesiredFolderPath}/Tests/${FrameWorkName}.Robot</arg>
+</arguments>
+<msg timestamp="20180310 14:07:03.382" html="yes" level="INFO">Created file '&lt;a href="file://C:\Users\user\PycharmProjects\Test2\Tests\Test2.Robot"&gt;C:\Users\user\PycharmProjects\Test2\Tests\Test2.Robot&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20180310 14:07:03.382" starttime="20180310 14:07:03.381"></status>
+</kw>
+<status status="PASS" endtime="20180310 14:07:03.384" critical="yes" starttime="20180310 14:06:23.967"></status>
+</test>
+<doc>This file contains all the necessary steps to create another Web Testing Framework Skeleton.</doc>
+<status status="PASS" endtime="20180310 14:07:03.388" starttime="20180310 14:06:23.873"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="FrameWorkAutomation" pass="1">FrameWorkAutomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
